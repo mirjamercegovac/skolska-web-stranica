@@ -1,0 +1,216 @@
+        
+#gallery .box-container{
+    columns: 25rem 3;
+    gap: 1.5rem;
+}
+
+#gallery img{
+    width: 100%;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.h2-gallery{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3.6rem;
+    color: black;
+    letter-spacing: 1.2px;
+}
+
+.h2-notice{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3.6rem;
+    color: black;
+    letter-spacing: 1.2px;
+}
+
+
+.notice .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.notice .box-container .box{
+    overflow: hidden;
+}
+
+.notice .box-container .box .image{
+    height: 20rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.notice .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.notice .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.notice .box-container .box .content h3{
+    font-size: 1.8rem;
+}
+
+.notice .box-container .box .content p{
+    padding: 1rem 0;
+    height: 100%;
+    font-size: 1.4rem;
+    color: black;
+    line-height: 2;
+    text-align: justify;
+}
+
+
+.notice .box-container .box .content a:hover{
+    color: rgb(94, 94, 139);
+}
+
+.notice .box-container .box .contact{
+    padding: 2rem;
+    text-align: center;
+}
+
+.notice .box-container .box .contact p{
+    padding: 1rem 0;
+    height: 100px;
+    font-size: 1.4rem;
+    color: black;
+    line-height: 2;
+    text-align: justify;
+}
+
+.wrapper{
+    background: rgb(0, 183, 255);
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper .form input{
+    background: #222222;
+    color: white;
+    font-size: 15px;
+    width: 450px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.wrapper .form textarea{
+    background: #222222;
+    color: white;
+    font-size: 15px;
+    width: 450px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+
+.preview-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: transparent;
+    max-width: 700px;
+    width: 100%;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.preview-box.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
+}
+.preview-box .details{
+    display: flex;
+    align-items: center;
+    padding: 12px 15px 12px 10px;
+    justify-content: space-between;
+}
+.preview-box .details .title{
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.details .title p{
+    margin: 0 5px;
+}
+.details .title p.current-img{
+    font-weight: 500;
+}
+.details .icon{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.preview-box .image-box{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.image-box .slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+.slide.prev{
+    left: 0px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(7px);
+}
+.slide.next{
+    right: 0px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(7px);
+}
+
+.slide.prev:hover,
+.slide.next:hover{
+    font-size: 35px;
+}
+.image-box img{
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+}
+.shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background: rgba(0,0,0,0.9);
+}

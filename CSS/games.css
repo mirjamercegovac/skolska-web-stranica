@@ -1,0 +1,135 @@
+.h2-notice{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3.6rem;
+    color: black;
+    letter-spacing: 1.2px;
+}
+
+
+.notice .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.notice .box-container .box{
+    overflow: hidden;
+}
+
+.notice .box-container .box .image{
+    height: 20rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.notice .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.notice .box-container .box .content{
+    padding: 2rem;
+}
+
+.notice .box-container .box .content h3{
+    font-size: 1.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.notice .box-container .box .content p{
+    font-size: 1.4rem;
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+.notice .box-container .box .content a:hover{
+    color: rgb(94, 94, 139);
+}
+
+
+
+
+            
+.games .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    gap: 1.5rem;
+}
+
+.games p{
+    font-size: 1.4rem;
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
+    padding-bottom: 2rem;
+}
+
+.games .box-container .box{
+    height: 28rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.games .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.games .box-container .box span{
+    position: absolute;
+    top: 1rem; right: 3rem;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    color: rgb(61, 61, 61);
+}
+
+.games .box-container .box .content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 6rem; left: 0;
+    transition-delay: 0.2s;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.games .box-container .box:hover .content{
+    top: 0;
+    opacity: 1;
+}
+
+.games .box-container .box .content h3{
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.games .box-container .box .content p{
+    font-size: 1.3rem;
+    text-align: justify;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.games .box-container .box::before{
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    background: #fff;
+    clip-path: circle(20% at 96% 0);
+    transition: 0.2s linear;
+}
+
+.games .box-container .box:hover::before{
+    clip-path: circle(100%);
+}

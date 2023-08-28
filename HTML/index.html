@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/calendar.css">
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body onload="RenderDate()">
+    <!------------------------Navigation--------------------------->
+    <header>
+        <div id="menu" class="fas fa-bars"></div>
+        <a href="#" class="logo"><i class="fas fa-shield-alt"><i class="fas fa-sign-out-alt"></i>SJ</i></a>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#">HOME</a></li>
+                <li><a href="oskoli.html">O školi</a></li>
+                <li><a href="kategorije.html">Kategorije</a></li>
+                <li><a href="predmeti.html">Predmeti</a></li>
+                <li><a href="igre.html">Tjedan igre</a></li>
+            </ul>
+        </nav>  
+        <div id="login" class="fas fa-user-circle">
+        </div>
+    </header>
+    <!------------------------Navigation--------------------------->
+    
+
+
+
+    <!------------------------Login-Form--------------------------->
+    <div class="login-form">
+        <form action="">
+            <h3>Prijava</h3>
+            <input type="text" placeholder="username" class="box">
+            <input type="password" placeholder="password" class="box">
+            <a href="register.php">Go to register</a>
+            <input type="submit" class="btn" value="Login">
+            <i class="fas fa-times"></i>
+        </form>
+    </div>
+    <!------------------------Login-Form--------------------------->
+
+
+    <section class="home" id="home">
+        <p>Dobrodošli</p>
+        <h1>Škola za superjunake</h1>
+        <p>“Heroes are made by the paths they choose, not the power they are graced with.” – Brodi Ashton</p>
+        <p style="border-bottom: 1px solid white;">so,<br> which path did you choose?</p>
+    </section>
+    
+    <section class="notice" id="notice">
+        <h2 class="h2-notice">Obavijesti</h2>
+        <div class="box-container">
+            
+            <div class="box">
+                <div class="image">
+                    <img src="https://ddx5i92cqts4o.cloudfront.net/images/1cv7crm62_steven-kent-lomtong-anime-classroom-lo.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Nastava</h3>
+                    <p>Nastava će se održavati u 3 smjene. Prva smjena kreće od 7:00 sati i traje do 12:00, druga kreće od 13:00 i 
+                        traje do 18:00 i treća kreće od 19:00 i traje do 22:00. Prvi, drugi i treći razredi kreću s prvom smjenom, 
+                        četvrti, peti, šesti s drugom smjenom, a sedmi, osmi i deveti s trećom smjenom. </p>
+                    <a href="javascript:void();" class="box-btn">Više</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://leverageedu.com/blog/wp-content/uploads/2020/05/Online-Education-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Upisi</h3>
+                    <p>Upisi će se održati 1., 2. i 3. rujna 2021. godine od 9:00 do 12:00 sati na drugom katu. Učenici će na ulazu 
+                        popuniti magičnu karticu na kojoj će biti ponuđene kategorije (smjerovi u kojoj grupu se žele prijaviti) i 
+                        broj kojim će biti prozvani. Daljne upute dobiti će kada dođu na upis.</p>
+                    <a href="javascript:void();" class="box-btn">Više</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="https://ddx5i92cqts4o.cloudfront.net/images/1cv7crm62_steven-kent-lomtong-anime-classroom-lo.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Velika kuća</h3>
+                    <p>Velika kuća je mjesto gdje žive učenici. Nalazi se unutar kruga škole. Raspoređeni su po spavaonicama 
+                        i dobnim grupama, te spolovima. Doručak je u 09:00 sati za sve učenike, ručak u 12:00, a večera u 18:00 sati.</p>
+                    <a href="javascript:void();" class="box-btn">Više</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="slike/superheroes.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Kviz</h3>
+                    <p>Ako želiš provjeriti svoje znanje o supermoćima, magičnim stvorenjima i magiji riješi kviz i saznaj koliko poznaješ
+                        ovaj svijet. Kviz možeš pronaći na stranici kategorije ili na ovom <a href="kategorije.html">"linku"</a>.</p>
+                    <a href="javascript:void();" class="box-btn">Više</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="events">
+        <h2 class="h2-events">Događanja</h2>
+        <div class="box-container">
+            
+            <div class="box">
+                <div class="image">
+                    <img src="slike/competetion.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Natjecanje</h3>
+                    <p>Svake godine od 8.5 do 12.5 u našoj školi održava se natjecanje između učenika. Učenici su podjeljeni po kategorijama. 
+                        Svaka grupa se sastoji od 10 učenika sa vođom tima. Tako i ove godine bira se najboljih 5 učenika za svaku grupu 
+                        i glasa se za vođu tima. Više o kategorijama i izabranim učenicima i vođama pronađite <a href="kategorije.html">"ovdje"</a>.</p>
+                    <a href="javascript:void();" class="box-btn">Više</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="slike/superheroes.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Izbor učenika</h3>
+                    <p>Mjesec je dana prije početka tjedana igre. U igrama mogu sudjelovati učenici od 5. do 9. razreda. Kreću izbori za 
+                        učenike i njihove vođe tima. Učenike će izabrati profesori, a izbor vođe će birati učenici tako što će glasati za 
+                        jednog od ponuđenih na ovoj <a href="igre.html">"stranici"</a>.</p>
+                    <a href="javascript:void();" class="box-btn">Više</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="slike/ball.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Školski bal</h3>
+                    <p>Jedan od najljepših događanja u našoj školi je školski bal. Održat će se 20.6 od 18:00 sati. Svi ste dobrodošli. 
+                        Svako od naših učenika dobit će i jednu dodatnu pozivnicu gdje može pozvati nekoga tko nije iz naše škole.
+                    </p>
+                    <a href="javascript:void();" class="box-btn">Više</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="calendar" class="wrapper">
+            <div class="calendar">
+                <div class="month">
+                    <div class="prev" onclick="moveDate('prev')"><span>&#10094</span></div>
+                    <div>
+                        <h2 id="month"></h2>
+                        <p id="date_str"></p>
+                    </div>
+                    <div class="next" onclick="moveDate('next')"><span>&#10095</span></div>
+                </div>
+              <div class="weekdays">
+                
+                  <div>Pon</div>
+                  <div>Uto</div>
+                  <div>Sri</div>
+                  <div>Čet</div>
+                  <div>Pet</div>
+                  <div>Sub</div>
+                  <div>Ned</div>
+              </div>
+              <div class="days"></div>
+            </div>
+            
+            <div class="calendar-events">
+                <h4>13.9</h4> <li>Početak školske godine</li>
+                <h4>20.10</h4> <li>Dan škole</li>
+                <h4>8.5.-12.5</h4> <li>Održavanje igara</li>
+            </div>
+            
+    </div>
+
+    <script src="JS/calendar.js"></script>
+
+
+
+
+    
+    <!---------------------------Footer--------------------------->
+    <div class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>O školi</h3>
+                <p>Najbolja škola za superjunake u svemiru</p>
+            </div>
+            <div class="box">
+                <h3>Kontakt</h3>
+                <p><i class="fas fa-envelope"> primjer@gmail.com </i></p>
+                <p><i class="fas fa-phone"> +123-456-7890 </i></p>
+            </div>
+        </div>
+    </div>
+    <!---------------------------Footer--------------------------->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/a.js"></script>
+</body>
+</html>

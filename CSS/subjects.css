@@ -1,0 +1,42 @@
+.h2-subjects{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3.6rem;
+    color: black;
+    letter-spacing: 1.2px;
+}
+
+.subjects .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.subjects .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 2px solid rgb(1, 217, 255);
+    background: rgb(202, 243, 255);
+    cursor: pointer;
+}
+
+.subjects .box-container .box:hover{
+    border: 2px solid rgb(1, 217, 255);
+    background: rgb(1, 217, 255);
+}
+
+.subjects .box-container .box img{
+    height: 8rem;
+}
+
+.subjects .box-container .box h3{
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.subjects .box-container .box p{
+    padding: 0.5rem 0;
+    text-align: justify;
+}
+

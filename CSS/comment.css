@@ -1,0 +1,81 @@
+
+
+.wrapper{ 
+    background: rgb(0, 183, 255);
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper .form{
+    width: 90%;
+    display: block;
+}
+
+.wrapper .form input{
+    background: #222222;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.wrapper .form textarea{
+    background: #222222;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    display: flex;
+}
+
+.wrapper .form .button{
+    background: #222222;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+    opacity: 0.8;
+    transition: 0.2s all ease;
+}
+
+.wrapper .form .button:hover{
+    opacity: 1;
+}
+
+.comment .content{
+    text-align: center;
+    background: #222222;
+    color: white;
+    padding: 10px;
+    width: 800px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: 150px;
+}
+
+.comment .content p{
+    margin-bottom: 15px;
+    width: 450px;
+}

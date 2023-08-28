@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/vote.css">
+
+    <style>
+        .number{
+            border-radius: 50%;
+            padding: 10px 12px 10px 15px;
+            font-size: 2rem;
+            background-image: linear-gradient(to bottom right, rgb(0, 217, 255), rgb(255, 0, 212));  
+        }
+        .game{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body onload="RenderDate()">
+    <!------------------------Navigation--------------------------->
+    <header>
+        <div id="menu" class="fas fa-bars"></div>
+        <a href="#" class="logo"><i class="fas fa-shield-alt">SJ</i></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="oskoli.php">O školi</a></li>
+                <li><a href="kategorije.php">Kategorije</a></li>
+                <li><a href="predmeti.php">Predmeti</a></li>
+                <li><a class="active" href="#">Tjedan igre</a></li>
+            </ul>
+        </nav>  
+        <div id="login" class="fas fa-user-circle">
+        </div>
+    </header>
+    <!------------------------Navigation--------------------------->
+    
+    <div class="login-form">
+        <form action="">
+            <h3>Prijava</h3>
+            <input type="email" placeholder="username" class="box">
+            <input type="password" placeholder="password" class="box">
+            <input type="submit" class="btn" value="login">
+            <i class="fas fa-times"></i>
+        </form>
+    </div>
+
+
+    <section class="home" id="home">
+        <h1>Tjedan igre</h1>
+    </section>
+
+    <section class="notice" id="notice">
+        <h2 class="h2-notice">Upute</h2>
+        <div class="box-container">
+            
+            <div class="box">
+                <div class="content">
+                    <p>Da bi prošli sve prepreke i došli cilja potrebno je proći 4 igre: </p>
+                    <h3><span class="number">1.</span> Labirint</h3> 
+                        <p class="game">Ulaskom u labirint treba pronaći pravi izlaz koji vodi do iduće igre. Pronalazak izlaza u labirintu
+                            ograničen je vremenom. Ukoliko uspijete pronaći izlaz prije isteka vremena dobivate 5 nagradnih bodova, 
+                            u suprotnom dobivate kaznene bodove, što znači onoliko koliko duže ostanete u labirintu nakon isteka vremena 
+                            za toliko će te dobiti kaznenih bodova.</p><br><br>
+                    <h3><span class="number">2.</span> Pronađi predmete</h3> 
+                        <p class="game">Završetkom labirinta ulazite u šumu u kojoj je skriveno po 5 predmeta za svaku grupu. Svaki tim pronalazi dijelove slagalice koju moraju složiti 
+                            kako bi otključali svoja vrata koja vode do sljedeće igre. VAŽNO je zapamtiti da neće biti lako pronaći predmete. Pronalaskom
+                            pojedinog predmeta morat ćete riješiti zagonetke. Nakon što pronađete sve predmete izlaskom iz šume doći će te do vrata.</p><br><br>
+                    <h3><span class="number">3.</span> Vrata</h3> 
+                        <p class="game">Kada dođete do vrata svaka grupa mora posložiti predmete za svoja vrata kako bi ih mogla otključati. Svaki predmet
+                            koji stavite na pravo mjesto dobit ćete nagradni bod. Ukoliko samo jedan predmet stavite na krivo mjesto možete dobiti ćete kazneni bod.
+                            Nakon što sve predmete posložite otključat će se vrata.</p><br><br>
+                    <h3><span class="number">4.</span> Simulacija</h3> 
+                        <p class="game">Nakon što se vrata otključaju ulazite u posljednju igru, a to je simulacija. SVaki član tima borit će se protiv svoje simulacije. Ta simulacija
+                            može biti bilo što, a to ćete vi znati kada dođete do toga. Onaj tko prvi završi simulaciju dobiva određene bodove. Pobjednik je onaj tim u kojemu su 
+                            svi prošli simulaciju.</p><br><br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="students">
+        <h2>Popis učenika izabranih za članove tima</h2>
+        <div class="box-container">
+            <form action="" method="">
+                <table class="table">
+                    <thead>
+                        <tr> 
+                            <th>Br.</th>
+                            <th>Ime</th>
+                            <th>Prezime</th>
+                            <th>Kategorija</th>
+                            <th>Glasaj</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="l">
+                            <td>1.</td>
+                            <td>Anna</td>
+                            <td>Smerzy</td>
+                            <td>Ljudi</td>
+                            <td><input type="submit" name="annaL" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="l">
+                            <td>2.</td>
+                            <td>John</td>
+                            <td>Smith</td>
+                            <td>Ljudi</td>
+                            <td><input type="submit" name="johnL" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="l">
+                            <td>3.</td>
+                            <td>Mei</td>
+                            <td>Senin</td>
+                            <td>Ljudi</td>
+                            <td><input type="submit" name="meiL" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="l">
+                            <td>4.</td>
+                            <td>So</td>
+                            <td>Ludvir</td>
+                            <td>Ljudi</td>
+                            <td><input type="submit" name="soL" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="l">
+                            <td>5.</td>
+                            <td>Jen</td>
+                            <td>Smerzy</td>
+                            <td>Ljudi</td>
+                            <td><input type="submit" name="jenL" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="ml">
+                            <td>1.</td>
+                            <td>Filip</td>
+                            <td>Smerzy</td>
+                            <td>Meta ljudi</td>
+                            <td><input type="submit" name="filipML" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="ml">
+                            <td>2.</td>
+                            <td>Steve</td>
+                            <td>Smerzy</td>
+                            <td>Meta ljudi</td>
+                            <td><input type="submit" name="steveML" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="ml">
+                            <td>3.</td>
+                            <td>Leea</td>
+                            <td>Smerzy</td>
+                            <td>Meta ljudi</td>
+                            <td><input type="submit" name="leeaML" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="ml">
+                            <td>4.</td>
+                            <td>Sara</td>
+                            <td>Smerzy</td>
+                            <td>Meta ljudi</td>
+                            <td><input type="submit" name="saraML" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="ml">
+                            <td>5.</td>
+                            <td>Sindi</td>
+                            <td>Smerzy</td>
+                            <td>Meta ljudi</td>
+                            <td><input type="submit" name="sindiML" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="h">
+                            <td>1.</td>
+                            <td>Ella</td>
+                            <td>Smerzy</td>
+                            <td>Heroji</td>
+                            <td><input type="submit" name="ellaH" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="h">
+                            <td>2.</td>
+                            <td>Chloe</td>
+                            <td>Smerzy</td>
+                            <td>Heroji</td>
+                            <td><input type="submit" name="chloeH" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="h">
+                            <td>3.</td>
+                            <td>Dani</td>
+                            <td>Smerzy</td>
+                            <td>Heroji</td>
+                            <td><input type="submit" name="daniH" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="h">
+                            <td>4.</td>
+                            <td>Joe</td>
+                            <td>Smerzy</td>
+                            <td>Heroji</td>
+                            <td><input type="submit" name="joeH" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="h">
+                            <td>5.</td>
+                            <td>Johny</td>
+                            <td>Smerzy</td>
+                            <td>Heroji</td>
+                            <td><input type="submit" name="johnyH" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="n">
+                            <td>1.</td>
+                            <td>Sam</td>
+                            <td>Smerzy</td>
+                            <td>Nadnaravno</td>
+                            <td><input type="submit" name="samN" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="n">
+                            <td>2.</td>
+                            <td>Suzzi</td>
+                            <td>Smerzy</td>
+                            <td>Nadnaravno</td>
+                            <td><input type="submit" name="suzziN" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="n">
+                            <td>3.</td>
+                            <td>Kira</td>
+                            <td>Smerzy</td>
+                            <td>Nadnaravno</td>
+                            <td><input type="submit" name="kiraN" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="n">
+                            <td>4.</td>
+                            <td>Markus</td>
+                            <td>Smerzy</td>
+                            <td>Nadnaravno</td>
+                            <td><input type="submit" name="markusN" value="Vote" class="btn"></td>
+                        </tr>
+                        <tr class="n">
+                            <td>5.</td>
+                            <td>Noel</td>
+                            <td></td>
+                            <td>Nadnaravno</td>
+                            <td><input type="submit" name="noelN" value="Vote" class="btn"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+           
+        </div>
+    </section>
+
+    <section class="card-box">
+        <h2 class="h2-card">Rezultati i nagrade</h2>
+        <div class="card">
+            <div class="card1">
+                <div class="card-image">
+                    <img src="slike/silver.jpg" alt=""></div>
+                <div class="card-text">
+                  <span class="date">12.5.2021.</span>
+                  <h2>2.</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="card-image">
+                    <img src="slike/gold.jpg" alt=""></div>
+                <div class="card-text">
+                  <span class="date">12.5.2021.</span>
+                  <h2>1.</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="card-image">
+                    <img src="slike/bronze.jpg" alt=""></div>
+                <div class="card-text">
+                  <span class="date">12.5.2021.</span>
+                  <h2>3.</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="JS/calendar.js"></script>
+
+
+    <!---------------------------Footer--------------------------->
+    <div class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>O školi</h3>
+                <p>Najbolja škola za superjunake u svemiru</p>
+            
+            </div>
+            <div class="box">
+                <h3>Kontakt</h3>
+                <p><i class="fas fa-envelope"> primjer@gmail.com </i></p>
+                <p><i class="fas fa-phone"> +123-456-7890 </i></p>
+            </div>
+        </div>
+    </div>
+    <!---------------------------Footer--------------------------->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="JS/a.js"></script>
+</body>
+</html>
